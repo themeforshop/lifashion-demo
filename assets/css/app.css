@@ -736,6 +736,9 @@ body{ overflow-x: hidden; }
 	.bestUXTheme-layout .bestUXTheme-inner .caption-content {
 		font-size: 13px;
 	}
+	.bestUXTheme-layout .bestUXTheme-inner .caption-content{
+		margin-bottom: 20px;
+	}
 }
 .themeInfo-item .item-number{
 	font-size: 50px;
@@ -913,7 +916,7 @@ body{ overflow-x: hidden; }
 		width: 50%;
 	}
 	.demoTheme-layout{
-		padding: 50px 5px;
+		padding: 30px 5px;
 	}
 	.demoTheme-layout ul.filter-select{
 		padding: 0 10px;
