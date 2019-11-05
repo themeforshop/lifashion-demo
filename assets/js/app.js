@@ -62,21 +62,17 @@ function countInfo() {
             info.each(function() {
                 if(!$(this).hasClass('active-count')){
                     $(this).addClass('active-count');
-                    var number = $(this).find('[data-number]').data('number');
+                    var number = $(this).data('number');
                     var suffix = $(this).data('info');
                     var timer = $(this).data('item-timer');
-                    countDown($(this).find('[data-number]'), 0, number, suffix, timer);
+                    countDown($(this), 0, number, suffix, timer);
                 }
             });
         }
     }
     var countDown = function($this, first, number, suffix, timer){
         if(first <= number ){
-            if (number == 5) {
-                $this.html(first.toLocaleString());
-            } else {
-                $this.html(first.toLocaleString()+'+');
-            }
+            $this.html(first.toLocaleString()+'+');
             setTimeout (function() { countDown($this, first+suffix, number, suffix, timer); }, timer);
         } else {
             return false;
@@ -214,7 +210,7 @@ $(document).on('ready', function() {
     });
     wow.init();
 
-    countHome();
+    // countHome();
 
     showSidebar();
 
@@ -224,6 +220,6 @@ $(document).on('ready', function() {
 });
 
 $(window).on('scroll', function() {
-    countHome();
+    // countHome();
     countInfo();
 });
