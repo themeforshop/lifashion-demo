@@ -711,7 +711,7 @@ body{ overflow-x: hidden; }
 		position: static;
 		transform: none;
 		color: #000;
-		padding: 30px 0;
+		padding: 30px 0 40px;
 		margin: 0 auto;
 		text-align: center;
 		left: 0;
@@ -727,6 +727,14 @@ body{ overflow-x: hidden; }
 	}
 	.bestUXTheme-layout .bestUXTheme-inner .caption-content{
 		color: #000;
+	}
+}
+@media screen and (max-width: 550px){
+	.bestUXTheme-layout .bestUXTheme-inner .title-content{
+		font-size: 24px;
+	}
+	.bestUXTheme-layout .bestUXTheme-inner .caption-content {
+		font-size: 13px;
 	}
 }
 .themeInfo-item .item-number{
