@@ -330,24 +330,6 @@ header .caption .purchase-button:hover, header .caption .action-scroll:hover {
 	box-shadow: 0px 5px 15px 0px rgba(68, 68, 68, 0.2);
 	overflow: hidden;
 }
-.demoTheme-layout .demoTheme-content figure a.homeimage:before, .sectionTheme-inner .sectionTheme-content figure a.homeimage::before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: -75%;
-	z-index: 2;
-	display: block;
-	width: 30%;
-	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
-	transition: all .3s linear;
-}
-.demoTheme-layout .demoTheme-content figure a.homeimage:hover:before, .sectionTheme-inner .sectionTheme-content figure a.homeimage:hover::before{
-    left: 100%;
-}
 .demoTheme-layout .demoTheme-content figure a.homeimage img, .sectionTheme-inner .sectionTheme-content figure a.homeimage img{
 	width: 100%;
 	height: 100%;
