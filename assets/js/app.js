@@ -212,6 +212,8 @@ $(document).on('ready', function() {
 
     // countHome();
 
+    countInfo();
+
     showSidebar();
 
     animateClick();
